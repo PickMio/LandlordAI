@@ -2,11 +2,24 @@
 <configurationDescriptor version="97">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <logicalFolder name="HeaderFiles" displayName="头文件" projectFiles="true">
-      <itemPath>poker.h</itemPath>
+      <itemPath>base_card.h</itemPath>
+      <itemPath>base_compare.h</itemPath>
+      <itemPath>base_type.h</itemPath>
+      <itemPath>game_def.h</itemPath>
+      <itemPath>game_world.h</itemPath>
+      <itemPath>iplayer.h</itemPath>
+      <itemPath>poker_types.h</itemPath>
+      <itemPath>table_item.h</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles" displayName="源文件" projectFiles="true">
+      <itemPath>base_card.cc</itemPath>
+      <itemPath>base_compare.cc</itemPath>
+      <itemPath>base_type.cc</itemPath>
+      <itemPath>game_world.cc</itemPath>
+      <itemPath>iplayer.cc</itemPath>
       <itemPath>main.cc</itemPath>
-      <itemPath>poker.cc</itemPath>
+      <itemPath>poker_types.cc</itemPath>
+      <itemPath>table_item.cc</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles" displayName="资源文件" projectFiles="true">
     </logicalFolder>
@@ -38,11 +51,37 @@
           <commandLine>-lglog</commandLine>
         </linkerTool>
       </compileType>
+      <item path="base_card.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base_card.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base_compare.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base_compare.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base_type.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base_type.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="game_def.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="game_world.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="game_world.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="iplayer.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="iplayer.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cc" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="poker.cc" ex="false" tool="1" flavor2="0">
+      <item path="poker_types.cc" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="poker.h" ex="false" tool="3" flavor2="0">
+      <item path="poker_types.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="table_item.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="table_item.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -66,11 +105,37 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="base_card.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base_card.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base_compare.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base_compare.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="base_type.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="base_type.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="game_def.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="game_world.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="game_world.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="iplayer.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="iplayer.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.cc" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="poker.cc" ex="false" tool="1" flavor2="0">
+      <item path="poker_types.cc" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="poker.h" ex="false" tool="3" flavor2="0">
+      <item path="poker_types.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="table_item.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="table_item.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

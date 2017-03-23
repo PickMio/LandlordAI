@@ -16,7 +16,9 @@
 #include <stack>
 #include <vector>
 #include "log.h"
-#include "poker.h"
+#include "poker_types.h"
+#include "game_world.h"
+#include "iplayer.h"
 using namespace std;
 
 //向一个vector 插入空的vector 时会是什么样的
@@ -107,6 +109,7 @@ int main(int argc, char** argv) {
     LOGInfo log;
     log.Init("main");
     test();
+    LOG(INFO) << "game over";
     //test_vector_void();
     
     
