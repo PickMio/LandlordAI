@@ -101,6 +101,87 @@ void test_sub(){
     cout << v << endl;
 }
     
+bool strip(string& str){
+        bool begin = false;
+        //处理前面
+        for(auto c = str.begin(); c != str.end(); ){
+            
+            if( *c >= '1' && *c <= '9' ){
+                break;
+            }
+            if(*c == '+' || *c == '-'){
+                if(!begin){
+                    begin = true;
+                }else{
+                    //前面还有正负号
+                    return false;
+                }
+            }
+            if( *c == ' ' || *c == '0'){
+                c = str.erase(c);
+                continue;
+            }
+            if( *c == '0'){
+                if(!begin){
+                    begin = true;
+                }
+                c = str.erase(c);
+                continue;
+            }
+            
+            ++c;
+            
+        }
+        //处理后面空格
+        for(auto c = str.end() - 1; c != str.begin(); ){
+            if( *c == ' '){
+                c = str.erase(c);
+                --c;
+                continue;
+            }
+            if( *c >= '0' && *c <= '9' ){
+                break;
+            }else{
+                return false;
+            }
+          
+            --c;
+            
+        }
+        return true;
+    }
+void test_8(){
+    string str = "+1";
+    if(!strip(str)){
+        cout<< 0 << endl;
+        }
+        int sz = str.size();
+        if(sz <= 0) {
+            cout<< 0 << endl;
+        }
+        int ret = 0;
+        int n = 1;
+        int startpos = 0;
+   
+        if( str[0] == '+' ){
+            ++startpos;
+        }
+        if( str[0] == '-' ){
+            ++startpos;
+            n = -1;
+        }
+        for(int c = sz - 1; c >= 0; --c){
+            if(str[c] < '0' | str[c] > '9'){
+                cout<< 0 << endl;
+            }
+            ret += n * (str[c] - '0');
+            n *= 10;
+        }
+       cout<< ret << endl;
+    
+    
+}
+
     
 /*
  * 
@@ -108,7 +189,8 @@ void test_sub(){
 int main(int argc, char** argv) {
     LOGInfo log;
     log.Init("main");
-    test();
+    //test();
+    test_8();
     LOG(INFO) << "game over";
     //test_vector_void();
     
